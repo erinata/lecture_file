@@ -19,7 +19,12 @@ with open("data3.txt",'a',encoding = 'utf-8') as f:
    f.write("This is a test of appending\n")
 
 
+import csv
 
+with open('dataset.csv') as csv_file:
+    csv_reader = csv.reader(csv_file, delimiter=',')
+    for r in csv_reader:
+    	print(r)
 
 
 
